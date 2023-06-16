@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Links Page</title>
+  <title>Past Work</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <h1>Links</h1>
+  <h1>Past Projects</h1>
   <ul style="list-style-type: none;">
-    <% links.forEach(function(l){ %>
+    <% pastprojects.forEach(function(p){ %>
     <li style="margin: 15px 25px 15px 25px;">
-      <%= l.url %>
+      <%= p.project %>
       -
-      <%= l.urldescription %>
+      <%= p.timeframe %>
+      -
+      <%= p.description %>
+
     </li>
 
     <% }); %> 
   </ul>
 </body>
-</html> 
+</html>

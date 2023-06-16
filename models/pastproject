@@ -1,0 +1,11 @@
+const pastprojects = [
+    {project: 'project name', timeframe: '2019 - 2020', description: 'blah blah'}
+]
+
+module.exports = {
+    getPastProjects
+}
+
+function getPastProjects(){
+    return pastprojects;
+}
