@@ -7,7 +7,9 @@
 <body>
   <h1>Our Staff</h1>
   <ul>
-
+    <% staffMembers.forEach((member) => { %>
+      <li><%= member.staff %></li>
+  <% }); %>
   </ul>
 </body>
 </html>

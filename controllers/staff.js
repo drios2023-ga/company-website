@@ -1,9 +1,9 @@
 
 module.exports={
 
-    staff
+    getAll
 }
 
-function staff(req, res){
+function getAll(req, res){
     res.render('pages/staff');
 }
