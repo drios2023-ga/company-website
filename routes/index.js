@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var chController = require('../controllers/company-history');
+var chController = require('../controllers/companyhistory');
 
 
 /* GET home page. */
