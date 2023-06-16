@@ -1,9 +1,12 @@
+const link = require('../models/link');
 
 module.exports={
 
-    links
+    seeAllLinks
 }
 
-function links(req, res){
-    res.render('pages/links');
+function seeAllLinks(req, res){
+    res.render('pages/links',{
+        links: link.getAllLinks()
+    });
 }
