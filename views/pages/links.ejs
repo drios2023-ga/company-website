@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Links Page</title>
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-  <h1>Links</h1>
+<%- include('../partials/header.ejs') %>
+
   <ul style="list-style-type: none;">
     <% links.forEach(function(l){ %>
     <li style="margin: 15px 25px 15px 25px;">
-      <%= l.url %>
-      -
-      <%= l.urldescription %>
+      <a href="<%= l.url %>"><%= l.urldescription %></a>
     </li>
-
     <% }); %> 
   </ul>
-</body>
-</html> 
+  
+  <%- include('../partials/footer.ejs') %>

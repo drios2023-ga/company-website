@@ -10,7 +10,8 @@ function seeAllStaffMembers(req, res){
 }
 
 function seeAllStaffMembers(req, res){
-    res.render('pages/staffmembers',{
+    res.render('pages/staffmembers', {
+        title: 'Staff Members',
         staffmembers: staffmembers.getAllStaffMembers()
     });
 }

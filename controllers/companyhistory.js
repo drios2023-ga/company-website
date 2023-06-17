@@ -5,5 +5,5 @@ module.exports={
 }
 
 function companyhistory(req, res){
-    res.render('pages/companyhistory');
+    res.render('pages/companyhistory', {title: 'Company History'});
 }
