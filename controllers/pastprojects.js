@@ -7,6 +7,7 @@ module.exports={
 
 function seeAllPastProjects(req, res){
     res.render('pages/pastprojects',{
+        title: 'Past Projects',
         pastprojects: pastproject.getPastProjects()
     });
 }

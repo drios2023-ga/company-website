@@ -7,6 +7,7 @@ module.exports={
 
 function seeAllLinks(req, res){
     res.render('pages/links',{
+        title: 'Links',
         links: link.getAllLinks()
     });
 }

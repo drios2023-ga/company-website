@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Past Work</title>
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-  <h1>Past Projects</h1>
+<%- include('../partials/header.ejs') %>
+
   <ul style="list-style-type: none;">
     <% pastprojects.forEach(function(p){ %>
     <li style="margin: 15px 25px 15px 25px;">
@@ -19,5 +13,5 @@
 
     <% }); %> 
   </ul>
-</body>
-</html>
+
+  <%- include('../partials/footer.ejs') %>

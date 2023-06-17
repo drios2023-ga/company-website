@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Staff Page</title>
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+<%- include('../partials/header.ejs') %>
+
   <h1>Our Staff</h1>
   <ul>
     <% staffmembers.forEach(function(member) { %>
       <li><%= member.membername %></li>
   <% }); %>
   </ul>
-</body>
-</html>
+
+<%- include('../partials/footer.ejs') %>
