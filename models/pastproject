@@ -1,5 +1,9 @@
 const pastprojects = [
-    {project: 'project name', timeframe: '2019 - 2020', description: 'blah blah'}
+    {project: 'Citibank', timeframe: '2023 - 2023', description: 'A site for taking new loan applications.'}, 
+    {project: 'Travelers Property Casualty Insurance', timeframe: '2021 - 2022', description: 'A site for requesting quotes for new policies.'}, 
+    {project: 'Dunkin Donuts', timeframe: '2020 - 2021', description: 'A site for ordering donuts online.'}, 
+    {project: 'Toys R Us', timeframe: '2019 - 2020', description: 'A marketing site for Toys R Us.'}, 
+    {project: 'Walmart', timeframe: '2018 - 2019', description: 'An ecommerce site for Walmart.com'}, 
 ]
 
 module.exports = {
