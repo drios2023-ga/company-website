@@ -6,3 +6,26 @@ body {
 a {
   color: #00B7FF;
 }
+/* Global CSS styles */
+/* Add your global styles here */
+
+/* Example: Change the background color of the body */
+body {
+  background-color: #f5f5f5;
+}
+
+/* Example: Style the navigation menu */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
