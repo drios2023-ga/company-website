@@ -25,6 +25,26 @@ app.use('/', indexRouter);
 //app.use('/users', usersRouter);
 app.use('/pages', pagesRouter);
 
+// Serve the global CSS file
+app.use(express.static('public'));
+
+// ...
+
+// ...
+
+// Handle form submission for the contact page
+app.post('/contact', (req, res) => {
+    const { name, email, message } = req.body;
+    // Process the form data (e.g., send an email, save to a database, etc.)
+  
+    // Redirect back to the contact page or display a success message
+    res.redirect('/contact');
+  });
+  
+  // ...
+  
+
+  
 // // catch 404 and forward to error handler
 // app.use(function(req, res, next) {
 //   next(createError(404));
