@@ -1,27 +1,45 @@
 <%- include('../partials/header.ejs') %>
+<script defer>
+  function processEmail(){
+    let name = document.getElementById('name');
+    let email = document.getElementById('email');
+    let message = document.getElementById('message');
+
+    name.value = "";
+    email.value = "";
+    message.value = "";
+
+    document.getElementById('submitmessage').innerText = "Message sent.";
+}
+
+</script>
+  <table>
+    <tr>
+      <td>
+        Name:
+      </td>
+      <td>
+        <input type="text" id="name" name="name" required>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Email:
+      </td>
+      <td>
+        <input type="email" id="email" name="email" required>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Message:
+      </td>
+      <td>
+        <textarea id="message" name="message" required></textarea>
+      </td>
+    </tr>
+  </table>
+
+  <button onclick="processEmail()">Submit</button>
+  <p id="submitmessage">Click submit to send your message.</p>
 <%- include('../partials/footer.ejs') %>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Contact Page</title>
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-  <h1>Contact Us</h1>
-  <form method="POST" action="/contact">
-    <div>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-    </div>
-    <button type="submit">Submit</button>
-  </form>
-</body>
-</html>
