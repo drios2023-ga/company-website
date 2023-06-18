@@ -25,8 +25,8 @@ app.use('/', indexRouter);
 //app.use('/users', usersRouter);
 app.use('/pages', pagesRouter);
 
-// Serve the global CSS file
-app.use(express.static('public'));
+// // Serve the global CSS file
+// app.use(express.static('public'));
 
 // ...
 
